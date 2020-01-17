@@ -4,7 +4,7 @@ function increaseValue(){
     var grade = document.getElementById('grade').innerText;
     var formattedGrade = parseInt(grade);
 
-    if (formattedGrade < 98) {
+    if (formattedGrade = 99) {
         document.getElementById('grade').innerText = formattedGrade + 1;
     }
 }
@@ -18,15 +18,15 @@ function decreaseValue(){
     }
 }
 
-function changeColor() {
-    document.getElementById('coloredRow').style.backgroundColor = getRandomColor();
+function changeColor(){
+    document.getElementById('grade').style.backgroundColor = getRandomColor();
 }
 
-function changeBackgroundColor() {
+function changeBackgroundColor(){
     document.body.style.backgroundColor = getRandomColor();
 }
 
-function getRandomColor() {
+function getRandomColor(){
     var letters = '0123456789ABCDEF';
     var color = '#';
     for (var i = 0; i < 6; i++) {
